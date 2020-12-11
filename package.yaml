@@ -35,6 +35,8 @@ description:         Please see the README on GitHub at <https://github.com/gith
 dependencies:
 - base >= 4.7 && < 5
 - containers >= 0.6
+- monad-loops == 0.4.*
+- mtl == 2.2.*
 - parsec == 3.1.*
 - vector >= 0.12
 
@@ -164,6 +166,36 @@ executables:
 
   aoc2020-7-exe:
     main:                Problem7-1.hs
+    source-dirs:         app
+    ghc-options:
+    - -threaded
+    - -rtsopts
+    - -with-rtsopts=-N
+    dependencies:
+    - aoc2020
+
+  aoc2020-8-exe:
+    main:                Problem8-1.hs
+    source-dirs:         app
+    ghc-options:
+    - -threaded
+    - -rtsopts
+    - -with-rtsopts=-N
+    dependencies:
+    - aoc2020
+
+  aoc2020-9-exe:
+    main:                Problem9-1.hs
+    source-dirs:         app
+    ghc-options:
+    - -threaded
+    - -rtsopts
+    - -with-rtsopts=-N
+    dependencies:
+    - aoc2020
+
+  aoc2020-10-exe:
+    main:                Problem10-1.hs
     source-dirs:         app
     ghc-options:
     - -threaded
