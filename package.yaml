@@ -214,6 +214,16 @@ executables:
     dependencies:
     - aoc2020
 
+  aoc2020-13-exe:
+    main:                Problem13-1.hs
+    source-dirs:         app
+    ghc-options:
+    - -threaded
+    - -rtsopts
+    - -with-rtsopts=-N
+    dependencies:
+    - aoc2020
+
 tests:
   aoc2020-test:
     main:                Spec.hs
