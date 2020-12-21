@@ -4,7 +4,7 @@ cabal-version: 1.12
 --
 -- see: https://github.com/sol/hpack
 --
--- hash: 8d10fa791d0957a547804335785ff7e0126333633d9a0be07050b618ae1b6bf6
+-- hash: fb8f29c77e936fa60c0c0ee4cddc1f1e59242640d9aaa1bcc95f023a38af5b89
 
 name:           aoc2020
 version:        0.1.0.0
@@ -35,6 +35,7 @@ library
   build-depends:
       base >=4.7 && <5
     , containers >=0.6
+    , extra ==1.7.*
     , monad-loops ==0.4.*
     , mtl ==2.2.*
     , parsec ==3.1.*
@@ -52,6 +53,7 @@ executable aoc2020-1.1-exe
       aoc2020
     , base >=4.7 && <5
     , containers >=0.6
+    , extra ==1.7.*
     , monad-loops ==0.4.*
     , mtl ==2.2.*
     , parsec ==3.1.*
@@ -69,6 +71,7 @@ executable aoc2020-1.2-exe
       aoc2020
     , base >=4.7 && <5
     , containers >=0.6
+    , extra ==1.7.*
     , monad-loops ==0.4.*
     , mtl ==2.2.*
     , parsec ==3.1.*
@@ -86,6 +89,7 @@ executable aoc2020-10-exe
       aoc2020
     , base >=4.7 && <5
     , containers >=0.6
+    , extra ==1.7.*
     , monad-loops ==0.4.*
     , mtl ==2.2.*
     , parsec ==3.1.*
@@ -103,6 +107,7 @@ executable aoc2020-12-exe
       aoc2020
     , base >=4.7 && <5
     , containers >=0.6
+    , extra ==1.7.*
     , monad-loops ==0.4.*
     , mtl ==2.2.*
     , parsec ==3.1.*
@@ -120,6 +125,25 @@ executable aoc2020-13-exe
       aoc2020
     , base >=4.7 && <5
     , containers >=0.6
+    , extra ==1.7.*
+    , monad-loops ==0.4.*
+    , mtl ==2.2.*
+    , parsec ==3.1.*
+    , vector >=0.12
+  default-language: Haskell2010
+
+executable aoc2020-19-exe
+  main-is: Problem19-1.hs
+  other-modules:
+      Paths_aoc2020
+  hs-source-dirs:
+      app
+  ghc-options: -threaded -rtsopts -with-rtsopts=-N
+  build-depends:
+      aoc2020
+    , base >=4.7 && <5
+    , containers >=0.6
+    , extra ==1.7.*
     , monad-loops ==0.4.*
     , mtl ==2.2.*
     , parsec ==3.1.*
@@ -137,6 +161,7 @@ executable aoc2020-2.1-exe
       aoc2020
     , base >=4.7 && <5
     , containers >=0.6
+    , extra ==1.7.*
     , monad-loops ==0.4.*
     , mtl ==2.2.*
     , parsec ==3.1.*
@@ -154,6 +179,7 @@ executable aoc2020-2.2-exe
       aoc2020
     , base >=4.7 && <5
     , containers >=0.6
+    , extra ==1.7.*
     , monad-loops ==0.4.*
     , mtl ==2.2.*
     , parsec ==3.1.*
@@ -171,6 +197,7 @@ executable aoc2020-3.1-exe
       aoc2020
     , base >=4.7 && <5
     , containers >=0.6
+    , extra ==1.7.*
     , monad-loops ==0.4.*
     , mtl ==2.2.*
     , parsec ==3.1.*
@@ -188,6 +215,7 @@ executable aoc2020-3.2-exe
       aoc2020
     , base >=4.7 && <5
     , containers >=0.6
+    , extra ==1.7.*
     , monad-loops ==0.4.*
     , mtl ==2.2.*
     , parsec ==3.1.*
@@ -205,6 +233,7 @@ executable aoc2020-4.1-exe
       aoc2020
     , base >=4.7 && <5
     , containers >=0.6
+    , extra ==1.7.*
     , monad-loops ==0.4.*
     , mtl ==2.2.*
     , parsec ==3.1.*
@@ -222,6 +251,7 @@ executable aoc2020-4.2-exe
       aoc2020
     , base >=4.7 && <5
     , containers >=0.6
+    , extra ==1.7.*
     , monad-loops ==0.4.*
     , mtl ==2.2.*
     , parsec ==3.1.*
@@ -239,6 +269,7 @@ executable aoc2020-5.1-exe
       aoc2020
     , base >=4.7 && <5
     , containers >=0.6
+    , extra ==1.7.*
     , monad-loops ==0.4.*
     , mtl ==2.2.*
     , parsec ==3.1.*
@@ -256,6 +287,7 @@ executable aoc2020-5.2-exe
       aoc2020
     , base >=4.7 && <5
     , containers >=0.6
+    , extra ==1.7.*
     , monad-loops ==0.4.*
     , mtl ==2.2.*
     , parsec ==3.1.*
@@ -273,6 +305,7 @@ executable aoc2020-6.1-exe
       aoc2020
     , base >=4.7 && <5
     , containers >=0.6
+    , extra ==1.7.*
     , monad-loops ==0.4.*
     , mtl ==2.2.*
     , parsec ==3.1.*
@@ -290,6 +323,7 @@ executable aoc2020-6.2-exe
       aoc2020
     , base >=4.7 && <5
     , containers >=0.6
+    , extra ==1.7.*
     , monad-loops ==0.4.*
     , mtl ==2.2.*
     , parsec ==3.1.*
@@ -307,6 +341,7 @@ executable aoc2020-7-exe
       aoc2020
     , base >=4.7 && <5
     , containers >=0.6
+    , extra ==1.7.*
     , monad-loops ==0.4.*
     , mtl ==2.2.*
     , parsec ==3.1.*
@@ -324,6 +359,7 @@ executable aoc2020-8-exe
       aoc2020
     , base >=4.7 && <5
     , containers >=0.6
+    , extra ==1.7.*
     , monad-loops ==0.4.*
     , mtl ==2.2.*
     , parsec ==3.1.*
@@ -341,6 +377,7 @@ executable aoc2020-9-exe
       aoc2020
     , base >=4.7 && <5
     , containers >=0.6
+    , extra ==1.7.*
     , monad-loops ==0.4.*
     , mtl ==2.2.*
     , parsec ==3.1.*
@@ -359,6 +396,7 @@ test-suite aoc2020-test
       aoc2020
     , base >=4.7 && <5
     , containers >=0.6
+    , extra ==1.7.*
     , monad-loops ==0.4.*
     , mtl ==2.2.*
     , parsec ==3.1.*
